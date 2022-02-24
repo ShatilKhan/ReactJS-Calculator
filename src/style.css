@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e55039;
+  font-family: "Recursive", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: black;
+  box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+   padding: 5px;
+  height: 390px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.display {
+  background-color: gray;
+  color: #fff;
+  font-size: 38px;
+ position: relative;
+  padding: 20px 10px;
+  text-align: right;
+  margin top: 10px;
+  height: 70px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* .display small {
+  color: #fe9505;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+} */
+
+.nums-container {
+  width: 75%;
+}
+
+.ops-container {
+  width: 25%;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  font-size: 25px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.big-v {
+  border-radius: 25px;
+  height: 100px;
+}
+
+button.big-h {
+  border-radius: 25px;
+  width: 100px;
+}
+
+button.orange {
+  background-color: #fe9505;
+  color: #fff;
+}
+
+button.dark-gray {
+  background-color: #333333;
+  color: #fff;
+}
+
+button.light-gray {
+  background-color: #a5a5a5;
+}
+
+button.ac {
+  margin-right: 50%;
+}
